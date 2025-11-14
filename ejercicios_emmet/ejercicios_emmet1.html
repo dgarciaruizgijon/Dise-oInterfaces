@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Lista ordenada de 7 elementos -->
+
+    ol>li*7
+
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <!-- Una tabla de 6 filas y 8 columnas -->
+
+    table>tr*6>td*8
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Una lista no ordenada de 10 elementos que 
+    pertenecerán a la clase elemlist1, elemlist2,..., elemlist10 -->
+
+    ul>li.elemlist$*10
+
+    <ul>
+        <li class="elemlist1"></li>
+        <li class="elemlist2"></li>
+        <li class="elemlist3"></li>
+        <li class="elemlist4"></li>
+        <li class="elemlist5"></li>
+        <li class="elemlist6"></li>
+        <li class="elemlist7"></li>
+        <li class="elemlist8"></li>
+        <li class="elemlist9"></li>
+        <li class="elemlist10"></li>
+    </ul>
+
+    <!-- Un enlace a Google con el texto "Pinche aquí" y a continuación 
+     (al mismo nivel) una etiqueta div que contenga dos titulares de nivel 1 
+    que pertenezcan a las clases titulares1 y titulares2 respectivamente. -->
+
+    a[href="https://www.google.com"]{Pinche aquí}>div>h1.titulares$*2
+
+    <a href="https://www.google.com">Pinche aquí
+        <div>
+            <h1 class="titulares1"></h1>
+            <h1 class="titulares2"></h1>
+        </div>
+    </a>
+
+    <!-- Un formulario que use el método post, con el atributo action="procesar.php" 
+    y  que contenga tres campos de texto, un botón de envío y otro de reset. 
+    Todos los elementos deben tener sus etiquetas correspondientes (label) 
+    relacionadas a través del atributo for con el campo correspondiente. -->
+
+    form[method="post" action="procesar.php"]>label
+
+</body>
+</html>

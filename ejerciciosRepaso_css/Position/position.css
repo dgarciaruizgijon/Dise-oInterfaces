@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    border: 2px dashed black;
+    margin: 50px;
+    height: 675px;
+    width: 750px;
+
+    position: relative;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 2rem;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.first{
+    background-color: chartreuse;
+    position: static;
+    /* se coloca según el flujo de html(valor por defecto) */
+    /* ignora top, bottom, left, right y z-index*/
+
+}
+
+.second{
+    background-color: firebrick;
+    position: relative;
+    /* activa top, bottom, left, right y z-index */
+    /* el desplazamiento se realiza desde la posicion que ocupa el elemento según el float */
+
+}
+
+.third {
+    background-color: cornflowerblue;
+    position: absolute;
+    /* posición absoluta activa en top, bottom, left, right y z-index */
+    /* el desplazamiento con absolute se realiza desde el borde de la ventana del navegador o 
+    desde el primer ascendiente que tenga la position: relative */
+}
+
+.fourth{
+    background-color: deeppink;
+    position: fixed;
+    /* activa top, bottom, left, right y z-index */
+    /* fija el elemento en pantalla e ignora el posible scroll */
+    /* el desplazamiento se realiza desde el borde de la ventana del navegador */
+
+    /* bottom: 0px;
+    right:0px; */
+
+}
+
+.five {
+    background-color: black;
+    position: sticky;
+
+}
+

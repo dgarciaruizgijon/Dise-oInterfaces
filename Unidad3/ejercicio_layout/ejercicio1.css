@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  /* background-color: skyblue; */
+  margin-inline: auto;
+}
+
+.container {
+  background-color: skyblue;
+  margin: 20px auto;
+
+  padding: 20px;
+
+  width: 800px;
+  height: 600px;
+}
+
+header {
+  background-color: orange;
+  height: 50px;
+}
+
+
+main{
+  margin-inline: auto;
+}
+
+article {
+  
+
+  margin-top: 20px;
+  padding: 10px;
+  background-color: lightseagreen;
+  width: 23em;
+  height: 500px;
+}
+
+article:nth-child(1) {
+  float: left;
+}
+
+article:nth-child(2) {
+  float: right;
+}

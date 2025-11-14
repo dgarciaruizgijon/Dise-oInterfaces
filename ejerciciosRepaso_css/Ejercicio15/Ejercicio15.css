@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+h1 {
+    position: relative;
+    left: 50px;
+    top: 10px;
+
+}
+
+/* Barra de navegación sticky */
+.sticky-menu {
+    background-color: darkcyan;
+    position: sticky;
+    top: 0px;
+
+    margin-top: 10px;
+    padding-left: 50px;
+    width: 100%;
+
+    z-index: 10;
+}
+
+/* Enlaces */
+.menu-element {
+    display: inline-block; /* Para poner uno al lado de otro */
+    
+}
+
+.menu-element a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu-element a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    background-color: aqua;
+    height: 200px;
+    margin: 20px auto;
+    width: 80%;
+    /* Para colocar los hijos (logos) con position relativa con respecto al banner */
+    position: relative; 
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+    /* Para que se queden fijas con respecto al banner */
+    position: absolute;
+}
+
+.logo1 {
+    background-color: darkolivegreen;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.logo2 {
+    background-color: darkorange;
+
+}
+
+/* Content */
+.content {
+    background-color: darksalmon;
+    height: 600px;
+    margin: 20px auto;
+    width: 80%;
+
+    /* Para que abajo se pueda centrar en el panel de color salmón */
+    position: relative; 
+}
+
+.centered {
+    background-color: lightgreen;
+    line-height: 150px;
+    text-align: center;
+    height: 150px;
+    width: 50%;
+    /* margin-inline: auto; */
+
+    /* Para central en vertical */
+    /* recuerda añadir position: relative al padre */
+    position: absolute;
+    margin-top: -75px;
+    top: 50%;
+
+    /* Para centrar en horizontal */
+    left: 25%;
+    /* También vale margin-left: 25%; */
+
+}
+
+/* Footer */
+footer {
+    background-color: darkslategrey;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+    z-index: 10;
+}

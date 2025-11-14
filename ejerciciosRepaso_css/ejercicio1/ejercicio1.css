@@ -1,0 +1,21 @@
+/* Ejercicio2 */
+
+body {
+    background-color: grey;
+}
+
+h1 {
+    color: red;
+}
+
+pre {
+    color: black;
+    font-size: 14px;
+}
+
+p :first-child {
+    color: darkgreen;
+}
+
+
+

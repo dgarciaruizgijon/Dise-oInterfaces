@@ -1,0 +1,24 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    font-family: Impact;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+span {
+    font-family: Cambria;
+    text-transform: uppercase;
+}
