@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightgrey;
+    font-family: sans-serif;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.gallery_img {
+    width: 350px;
+    height: 350px;
+    display:block;
+    object-fit: cover;
+}
+
+.contenedor-general {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    margin-top: 30px;
+    flex: 1;
+
+}
+
+@media ()
+
+
+

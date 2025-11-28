@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/fondo.png);;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.contenedor-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 30px;
+}
+
+.primera-section {
+    background-color: yellowgreen;
+    align-self: flex-start;
+
+    text-align: center;
+    padding: 40px;
+    
+}
+
+.segunda-section {
+    background-color: aqua;
+    padding: 20px;
+    
+    text-align: center;
+}
+
+
+.tercera-section {
+    background-color: yellowgreen;
+    align-self: flex-end;
+
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    padding: 20px 80px;
+}
+
+.new_hamburguer {
+    font-size: 14px;
+}
+
+
+
+

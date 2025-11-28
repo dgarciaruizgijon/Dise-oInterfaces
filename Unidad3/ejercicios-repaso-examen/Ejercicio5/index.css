@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(to right, #d5f6f4, #6a7f7e);
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightblue;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    box-shadow: auto 20px 20px auto;
+}
+
+.contact__legend {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contact__name-phone-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.contact__field {
+    display: flex;
+}
+
+/* Correo */
+.contact__field {
+    display: flex;
+    margin: 15px;
+}
+
+/* Mensaje */
+.contact__field {
+    display: flex;
+    margin: 15px;
+}
+
+/* Enviar */
+.contact__send {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact__btn {
+    background-color: green;
+    font-size: 20px;
+    color: white;
+}
