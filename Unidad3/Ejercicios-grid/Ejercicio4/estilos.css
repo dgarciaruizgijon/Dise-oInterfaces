@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.gallery {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.gallery_title {
+    text-align: center;
+}
+
+.gallery_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.gallery_figure {
+    height: 350px;
+}
+
+.gallery_image {
+    width: 100%;
+    height: 100%;
+}

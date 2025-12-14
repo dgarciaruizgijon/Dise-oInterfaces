@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+body{
+    font-family:sans-serif;
+    background-color: #071a52;
+    line-height: 1.5;
+    margin: 20px 0;
+    color: rgb(62, 62, 62);
+}
+
+/* La anchura de la primera y de la última columna es de 10 rem.
+La altura de la primera y la última fila es de 5 rem.
+Container con 1100px de ancho maximo.
+Contempla un diseño responsive con un breakpoint en 600px.  */
+
+
+.container{
+    display: grid;
+    width: 90%;
+    margin: auto ;  
+    /* grid-template-columns: auto;
+    grid-template-rows: 5rem repeat(3,auto) 5rem; */
+}
+
+.header{
+    background-color: #fffacd;
+    height: 5rem;
+    /* display flex para centrar el texto */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.main{
+    background-color: white;
+    padding: 10px;
+}
+
+main > p{
+    margin-bottom: 20px;
+}
+
+.sidebar{
+    background-color: #e6e6fa;
+    padding: 10px;  
+}
+
+.navigation{
+    background-color: #ffe4e1;
+    padding: 10px;  
+ 
+}
+
+
+.footer{
+    background-color: #c0c0c0;
+    height: 5rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+@media (min-width: 600px){
+    .container{
+        grid-template-columns: 10rem 1fr 10rem;
+        grid-template-rows: 5rem 1fr 5rem;
+        max-width: 1100px;
+    }
+
+    .header{
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .navigation{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;  
+    }
+
+    .sidebar{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3; 
+    }
+
+    .footer{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4; 
+    }
+}

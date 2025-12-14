@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #fff, #f6f7);
+}
+
+.container {
+    display: flex;
+    margin: 5px auto;
+}
+
+.item1 {
+    flex-basis: 350px;
+    height: 80px;
+    background-color: red;
+    flex-basis: 1;
+}
+
+.item2 {
+    flex-basis: auto;
+    height: 80px;
+    background-color: green;
+    flex-basis: 2;
+}
+
+.item3 {
+    flex-basis: 380px;
+    height: 80px;
+    background-color: blue;
+    flex-basis: 3;
+}
+
+.item4 {
+    flex-basis: 320px;
+    height: 80px;
+    background-color: black;
+    flex-basis: 4;
+}

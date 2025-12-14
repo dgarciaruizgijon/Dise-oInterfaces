@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: white;
+    height: 100vh;
+    padding: 30px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    /* margin: 70px; */
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+}
+
+.container__text {
+    background-color: rgb(33, 51, 0);
+    /* padding: 20px; */
+
+    grid-column: 2 / 6;
+    grid-row: 2 / 8;
+    order: 1;
+
+}
+
+.container__titulo {
+    color: white;
+    font-size: 2rem;
+}
+
+.container__descripcion {
+    color: white;
+}
+
+.container__boton {
+    text-decoration: none;
+    color: rgb(33, 51, 0);
+    background-color: white;
+}
+
+.container__img {
+    background-image: url(img/playa.jpg);
+    background-size: cover;
+    background-position: top center;
+
+    width: 100%;
+
+    grid-column: 1 / 5;
+    grid-row: 1 / 9;
+}
+
+
+@media (max-width: 425px) {
+    .container {
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+}

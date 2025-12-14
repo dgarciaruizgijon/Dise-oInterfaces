@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    display: grid;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.item1 {
+    background-color: red;
+}
